@@ -1,4 +1,8 @@
 services:
-#    doctrine_cache_invalidation.example:
-#        class: Goksagun\DoctrineCacheInvalidationBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    doctrine_cache_invalidation.listener.invalidation:
+        class: Goksagun\DoctrineCacheInvalidationBundle\EventListener\DoctrineCacheInvalidationListener
+        #arguments: ["@service_id", "plain_value", "%parameter%"]
+        tags:
+            - { name: doctrine.event_listener, event: onFlush }
+        calls:
+            - [ setLogger, ['@?logger'] ]

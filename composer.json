@@ -1,0 +1,41 @@
+{
+    "name": "goksagun/doctrine-cache-invalidation-bundle",
+    "description": "Doctrine cache invalidation bundle",
+    "type": "symfony-bundle",
+    "authors": [
+        {
+            "name": "Burak Bolat",
+            "email": "brkblt@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "keywords": [
+        "doctrine cache invalidation bundle"
+    ],
+    "require": {
+        "doctrine/annotations": "^1.4",
+        "doctrine/doctrine-bundle": "^1.6",
+        "doctrine/orm": "^2.5|^2.6",
+        "symfony/expression-language": "^3.4|^4.3"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "*"
+    },
+    "autoload": {
+        "psr-4": { "Goksagun\\DoctrineCacheInvalidationBundle\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {}
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
