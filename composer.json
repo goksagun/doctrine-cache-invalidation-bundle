@@ -16,7 +16,7 @@
         "doctrine/annotations": "^1.4",
         "doctrine/doctrine-bundle": "^1.6",
         "doctrine/orm": "^2.5|^2.6",
-        "symfony/expression-language": "^3.4|^4.3"
+        "symfony/expression-language": "^3.4|^4.4"
     },
     "require-dev": {
         "symfony/phpunit-bridge": "*"
