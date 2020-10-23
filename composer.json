@@ -13,10 +13,10 @@
         "doctrine cache invalidation bundle"
     ],
     "require": {
-        "doctrine/annotations": "^1.4",
-        "doctrine/doctrine-bundle": "^1.6",
-        "doctrine/orm": "^2.5|^2.6",
-        "symfony/expression-language": "^3.4|^4.4"
+        "doctrine/annotations": "*",
+        "doctrine/doctrine-bundle": "*",
+        "doctrine/orm": "*",
+        "symfony/expression-language": "*"
     },
     "require-dev": {
         "symfony/phpunit-bridge": "*"
